@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="7uC-Ot-bcF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="HNNews" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WRZ-Gk-D4L">
+                                <rect key="frame" x="0.0" y="149" width="375" height="108"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="70"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copyright © 2018 huongnguyen" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r98-UL-J8O">
+                                <rect key="frame" x="0.0" y="600" width="375" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Thế giới trong tầm tay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgt-0y-roe">
+                                <rect key="frame" x="0.0" y="265" width="375" height="77"/>
+                                <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="35"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7uC-Ot-bcF" secondAttribute="bottom" id="Hj3-kf-JB5"/>
+                            <constraint firstItem="7uC-Ot-bcF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PcX-3R-rwU"/>
+                            <constraint firstItem="7uC-Ot-bcF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Peb-iF-RJv"/>
+                            <constraint firstItem="WRZ-Gk-D4L" firstAttribute="leading" secondItem="cgt-0y-roe" secondAttribute="leading" id="QeN-qm-B0d"/>
+                            <constraint firstItem="WRZ-Gk-D4L" firstAttribute="leading" secondItem="7uC-Ot-bcF" secondAttribute="leading" id="ZWe-zb-Fck"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cgt-0y-roe" secondAttribute="bottom" constant="285" id="gr5-kt-Y1f"/>
+                            <constraint firstItem="cgt-0y-roe" firstAttribute="top" secondItem="WRZ-Gk-D4L" secondAttribute="bottom" constant="8" symbolic="YES" id="n8D-8f-BC0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7uC-Ot-bcF" secondAttribute="trailing" id="onf-dC-pB5"/>
+                            <constraint firstItem="WRZ-Gk-D4L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="prX-H2-XNZ"/>
+                            <constraint firstItem="WRZ-Gk-D4L" firstAttribute="trailing" secondItem="cgt-0y-roe" secondAttribute="trailing" id="wFg-uI-iee"/>
+                            <constraint firstItem="WRZ-Gk-D4L" firstAttribute="trailing" secondItem="7uC-Ot-bcF" secondAttribute="trailing" id="wop-4w-BSM"/>
+                            <constraint firstItem="cgt-0y-roe" firstAttribute="centerY" secondItem="7uC-Ot-bcF" secondAttribute="centerY" id="xok-Vt-tvD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background.png" width="640" height="1136"/>
+    </resources>
+</document>
